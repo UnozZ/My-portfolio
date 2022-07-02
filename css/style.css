@@ -2,11 +2,89 @@
     margin: 0;
 }
 
-/* @font-face {
-    font-family: ;
-    src: url();
-} */
+/* Fonts destinati a varie sezioni del sito */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 
-body {
+/* Impostazione del container */
+html, body {
+    height: 100%;
+}
 
+.container {
+    height: 100%;
+}
+
+/* SEZIONE 1: barra di navigazione */
+.navbar-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    height: 110px;
+
+    background-color: #222E50;
+}
+
+/* sottosezione 1a: logo + motto */
+.logoMotto-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 300px;
+}
+
+.logo {
+    width: 75px;
+    content: url(/imgs/logo/blockchain.png);
+}
+
+.motto {
+    margin-left: 80px;
+    
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 550;
+    font-size: 2.4rem;
+    letter-spacing: 10px;
+    color: #E9D985;   
+}
+
+/* sottosezione 1b: links */
+.links-container {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 300px;
+    margin-top: 5px;
+
+}
+
+.link-item {
+    margin-right: 50px;
+    width: 160px;
+    height: 30px;
+}
+
+.link-item a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #E9D985;
+}
+
+.link-item p:hover {
+    transform: scale(1.1);
+    color: #439A86;
+    transition: 0.3s;
+}
+
+.link-item p:not(:hover) {
+    transform: scale(1);
+    color: #E9D985;
+    transition: 0.3s;
 }
