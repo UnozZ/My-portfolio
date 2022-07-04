@@ -1,95 +1,3 @@
-* {
-    margin: 0;
-}
-
-/* Impostazione del container */
-html, body {
-    height: 100%;
-}
-
-.container {
-    position: relative;
-    height: 100%;
-}
-
-/* SEZIONE 1: barra di navigazione */
-.navbar-container {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-
-    width: 100%;
-    height: 100px;
-
-    background-color: #131313;
-    box-shadow: 0 13px 15px black;
-    z-index: 1;
-}
-
-/* sottosezione 1a: logo + motto */
-.logoMotto-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    margin-left: 80px;
-}
-
-.logo {
-    width: 75px;
-    content: url(/imgs/logo/blockchain.png);
-}
-
-.motto {
-    margin-left: 60px;
-    
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 550;
-    font-size: 2rem;
-    letter-spacing: 10px;
-    color: #E9D985;   
-}
-
-/* sottosezione 1b: links */
-.links-container {
-    position: absolute;
-    display: flex;
-    right: 0;
-    margin-right: 100px;
-    margin-top: 5px;
-}
-
-.link-item {
-    margin-right: 30px;
-    width: 160px;
-    height: 30px;
-}
-
-.link-item a {
-    font-family: 'Cuprum', sans-serif;
-    font-weight: normal;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #E9D985;
-}
-
-.link-item p:hover {
-    transform: scale(1.2);
-    font-weight: bold;
-    color: #439A86;
-    transition: 0.3s;
-}
-
-.link-item p:not(:hover) {
-    transform: scale(1);
-    font-weight: normal;
-    color: #E9D985;
-    transition: 0.3s;
-}
-
 /* SEZIONE 2: about me */
 .abtme-container { 
     position: absolute;
@@ -104,6 +12,8 @@ html, body {
     height: 2000px;
     content: url(/imgs/sfondo/sfondo-abtme.jpg);
 }
+
+
 
 /* sottosezione 1b: tempo di lettura + titolo */
 .tempoLettura {
@@ -166,7 +76,6 @@ html, body {
     display: flex;
     margin-top: 40px;
     height: 550px;
-
 }
 
 .paragrafo1-item {
@@ -198,7 +107,7 @@ html, body {
     width: 100px;
     height: 100px;
 
-    background: url(/imgs/rocket.png);
+    background: url(/imgs/paragrafi/rocket.png);
     background-position: center;
     background-size: contain;
     background-blend-mode: multiply;
@@ -240,7 +149,7 @@ html, body {
     width: 750px;
     height: 550px;
 
-    content: url(/imgs/scuola.jpeg);
+    content: url(/imgs/paragrafi/scuola.jpeg);
 
     border-radius: 20px;
     box-shadow: -10px 10px 10px black;
@@ -252,6 +161,95 @@ html, body {
 }
 
 .paragrafo1-imgs:not(:hover) {
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+/* sottosezione 3b: 2° paragrafo */
+.paragrafo2-container {
+    display: flex;
+    margin-top: 150px;
+    height: 550px;
+}
+
+.paragrafo2-item {
+    position: relative;
+    margin-left: 240px;
+    width: 550px;
+    height: 550px;
+
+    background-color: #121212;
+    border-radius: 25px;
+    border-top: solid 1px #ffec8d;
+    border-left: solid 2px #ffec8d;
+    box-shadow: 10px 10px 10px black;
+}
+
+.paragrafo2-spazio {
+    margin: auto;
+    margin-top: 35px;
+    width: 490px;
+    height: 480px;
+
+    color: white;
+}
+
+.img {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 100px;
+    height: 100px;
+
+    background: url(/imgs/paragrafi/code.png);
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: multiply;
+}
+
+.paragrafo2-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 280px;
+    height: 60px;
+
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.paragrafo2 {
+    margin-top: 50px;
+
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.26rem;
+}
+
+.hobby-title {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 1.8rem;
+}
+
+.paragrafo2-imgs {
+    margin-left: 140px;
+    width: 750px;
+    height: 550px;
+
+    content: url(/imgs/paragrafi/pc.jpg);
+
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px black;
+}
+
+.paragrafo2-imgs:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.paragrafo2-imgs:not(:hover) {
     transform: scale(1);
     transition: 0.4s;
 }
