@@ -9,7 +9,15 @@ html, body {
 
 .container {
     position: relative;
-    height: 100%;
+    display: block;
+    height: 2220px;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 2220px;
+    content: url(/imgs/sfondo/sfondo-abtme.jpg);
 }
 
 /* SEZIONE 1: barra di navigazione */
@@ -88,4 +96,163 @@ html, body {
     font-weight: normal;
     color: #E9D985;
     transition: 0.3s;
+}
+
+/* SEZIONE 2: social e contatti */
+.footer-container {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 415px;
+
+    background-color: #000000;
+}
+
+.bg-footer1 {
+    position: inherit;
+    top: 0px;
+
+    content: url(/imgs/footer/bg-pattern.svg);
+}
+
+.bg-footer2 {
+    position: inherit;
+    top: 13px;
+    right: 0;
+    width: 1200px;
+    height: 400px;
+
+
+    filter: blur(9px);
+    background-image: url(/imgs/footer/bg-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-content {
+    position: relative;
+
+    float: right;
+    top: 70px;
+    right: 210px;
+
+    width: 800px;
+    height: 250px;
+}
+
+.footer-content button{
+    width: 800px;
+    height: 50px;
+
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+
+    cursor: pointer;
+
+    background-color: rgb(240, 151, 68);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 6px rgb(152, 94, 39);
+}
+
+.footer-content button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px rgb(152, 94, 39);
+}
+
+.links-footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    
+    width: 400px;
+}
+
+.link-footer {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;    
+}
+
+.link-footer:hover {
+    text-decoration: underline;
+}
+
+.links-span {
+    width: 100px;
+}
+
+.social-container  {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+    margin: auto;
+    margin-top: 50px;
+
+    width: 600px;
+    height: 60px;
+}
+
+.social-title p {
+    margin-top: 13px;
+
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;   
+}
+
+.social-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 60px;
+
+    font-size: 50px;
+}
+
+.social-span {
+    width: 100px;
+}
+
+.fa {
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin: 7px 5px;
+}
+
+.fa-github {
+    background-color: #131313;
+    color: rgb(255, 255, 255);
+}
+
+.fa-github:hover {
+    background-color: #1a1919;
+}
+
+.fa-linkedin {
+    background-color: #2766B1;
+    color: white;
+}
+
+.fa-linkedin:hover {
+    background-color: #2d70c3;
 }

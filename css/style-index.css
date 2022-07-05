@@ -6,15 +6,6 @@
     height: 1800px;
 }
 
-.bg {
-    position: absolute;
-    width: 100%;
-    height: 2000px;
-    content: url(/imgs/sfondo/sfondo-abtme.jpg);
-}
-
-
-
 /* sottosezione 1b: tempo di lettura + titolo */
 .tempoLettura {
     position: absolute;
