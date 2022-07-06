@@ -1,0 +1,91 @@
+/* SEZIONE 1: skills */
+.skills-container {
+    position: absolute;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 800px;
+
+    background-color: black;
+    box-shadow: 0 10px 10px black;
+}
+
+.bg-skills {
+    width: 1200px;
+    height: 800px;
+
+    content: url(/imgs/sfondo/sfondo-skills.jpg);
+}
+
+.skills-buone {
+    position: absolute;
+
+    left: 6%;
+    width: 400px;
+    height: 800px;
+}
+
+.skillsBuone-title {
+    margin-top: 100px;
+    text-align: center;
+
+    font-family: 'Cuprum', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    color: white;
+}
+
+.skills-items {
+    margin-top: 70px;
+    display: flex;
+}
+
+#skill {
+    margin-left: 65px;
+    width: 100px;
+    height: 100px;
+}
+
+#skill:hover {
+    transform: scale(1.4);
+    transition: 0.4s;
+}
+
+#skill:not(:hover) {
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.html {
+    content: url(/imgs/linguaggi/html.png);
+}
+
+.css {
+    content: url(/imgs/linguaggi/css.png);
+}
+
+.js {
+    width: 100px;
+    height: 100px;
+
+    content: url(/imgs/linguaggi/js.png);
+}
+
+.PHP {
+    content: url(/imgs/linguaggi/php.png);
+}
+
+.MySQL {
+    content: url(/imgs/linguaggi/mysql.png);
+}
+
+.java {
+    content: url(/imgs/linguaggi/java.png);
+}
+
+
