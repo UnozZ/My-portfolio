@@ -9,56 +9,107 @@
     justify-content: center;
 
     width: 100%;
-    height: 800px;
+    height: 90vh;
 
-    background-color: black;
-    box-shadow: 0 10px 10px black;
+    background-image: url(/imgs/sfondo/black-wall.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 20px 10px black;
 }
 
 .bg-skills {
-    width: 1200px;
-    height: 800px;
+    margin-top: 145px;
+    width: 860px;
+    height: 650px;
 
     content: url(/imgs/sfondo/sfondo-skills.jpg);
+    
+    border-radius: 20px;
+    box-shadow: 0 0 15px 10px black;
+}
+
+.skills-title {
+    position: absolute;
+    top: 0;
+    margin-top: 2vh;
+
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 7.5rem;
+    color: white;
+}
+
+.skills-hr {
+    margin: auto;
+
+    width: 200px;
+    color: white;
 }
 
 .skills-buone {
     position: absolute;
-
-    left: 6%;
+    margin-top: 145px;
+    left: 2%;
     width: 400px;
-    height: 800px;
+    height: 600px;
+
+    background-color: #131313;  
+    border-radius: 10px;
+    border-top: solid 1px #ffec8d;
+    border-left: solid 2px #ffec8d;
+    box-shadow: -10px 10px 20px 5px black;
 }
 
-.skillsBuone-title {
-    margin-top: 100px;
+.skillsItem-title {
+    margin-top: 40px;
     text-align: center;
 
     font-family: 'Cuprum', sans-serif;
     font-weight: normal;
     font-size: 2rem;
+    letter-spacing: 3px;
     color: white;
 }
 
 .skills-items {
-    margin-top: 70px;
+    margin-top: 35px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-span {
+    width: 50px;
 }
 
 #skill {
-    margin-left: 65px;
     width: 100px;
     height: 100px;
 }
 
 #skill:hover {
-    transform: scale(1.4);
+    transform: scale(1.25);
     transition: 0.4s;
 }
 
 #skill:not(:hover) {
     transform: scale(1);
     transition: 0.4s;
+}
+
+.skills-discrete {
+    position: absolute;
+    margin-top: 145px;
+    right: 2%;
+    width: 400px;
+    height: 600px;
+
+    background-color: #131313;  
+    border-radius: 10px;
+    border-top: solid 1px #ffec8d;
+    border-left: solid 2px #ffec8d;
+    box-shadow: 10px 10px 20px 5px black;
 }
 
 .html {
@@ -88,4 +139,27 @@
     content: url(/imgs/linguaggi/java.png);
 }
 
+.python {
+    content: url(/imgs/linguaggi/python.png);
+}
 
+.cpp {
+    content: url(/imgs/linguaggi/c++.png);
+}
+
+.solidity {
+    content: url(/imgs/linguaggi/solidity.png);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.otherSkills-container {
+    position: absolute;
+    top: 0; 
+    margin-top: 100vh; 
+
+    width: 100%;
+    height: 84vh;
+
+    border: solid 2px white;
+}
