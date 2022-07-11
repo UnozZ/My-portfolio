@@ -172,19 +172,20 @@
 .os-container {
     width: 700px;
     height: 84vh;
-
-    border: solid 2px black;
 }
 
 .span-otherSkills {
-    width: 130px;
+    width: 60px;
 }
 
-.softSkills-container {
-    width: 700px;
-    height: 84vh;
+.hr-otherSkills {
+    position: absolute;
+    left: 45%;
 
-    border: solid 2px black;
+    width: 1px;
+    height: 700px;
+
+    background-color: black;
 }
 
 .os {
@@ -224,7 +225,7 @@
 .os-p {
     margin: auto;
     width: 80%;
-
+    
     font-family: 'Philosopher', sans-serif;
     font-size: 1.26rem;
 }
@@ -232,8 +233,6 @@
 .studio-allenamento {
     margin-top: 20px;
     height: 425px;
-
-    border: solid 2px black;
 }
 
 .studio-allenamento p {
@@ -243,3 +242,183 @@
     font-family: 'Philosopher', sans-serif;
     font-size: 1.26rem;
 }
+
+.posti-allenamento {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 140px;
+}
+
+#img-allenamento1 {
+    width: 250px;
+}
+
+#img-allenamento2 {
+    width: 150px;
+}
+
+#img-allenamento3 {
+    width: 120px;
+    font-size: 70px;
+}
+
+#img-allenamento4 {
+    width: 200px;
+}
+
+.softSkills-container {
+    position: relative;
+    width: 800px;
+    height: 84vh;
+}
+
+.softSkills-main{
+    position: absolute;
+    margin-top: 60px;
+    width: 800px;
+    height: 700px;
+
+    background-color: #131313;
+    border-radius: 15px;
+}
+
+.img-softSkills {
+    position: absolute;
+    right: 0;
+    width: 570px;
+    height: 480px;
+
+    border-top-right-radius: 15px;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+}
+
+.softSkills-parolechiave {
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 10px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 200px;
+    height: 470px;
+}
+
+.parole-chiave {
+    margin-top: 35px;
+    width: 190px;
+    height: 45px;
+    
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#word1 {
+    --color: rgb(84, 107, 255);
+    color: var(--color);
+
+    background-color: transparent;
+    border: solid 2px var(--color);
+}
+
+#word1:hover {
+    background-color: var(--color);
+    color: #131313;
+    transition: 0.3s;
+}
+
+#word1:not(:hover) {
+    background-color: transparent;
+    color: var(--color);
+    transition: 0.3s;
+}
+
+#word2 {
+    --color: rgb(255, 227, 100);
+    color: var(--color);
+
+    background-color: transparent;
+    border: solid 2px var(--color);
+}
+
+#word2:hover {
+    background-color: var(--color);
+    color: #131313;
+    transition: 0.3s;
+}
+
+#word2:not(:hover) {
+    background-color: transparent;
+    color: var(--color);
+    transition: 0.3s;
+}
+
+#word3 {
+    --color: rgb(134, 255, 100);
+    color: var(--color);
+
+    background-color: transparent;
+    border: solid 2px var(--color);
+}
+
+#word3:hover {
+    background-color: var(--color);
+    color: #131313;
+    transition: 0.3s;
+}
+
+#word3:not(:hover) {
+    background-color: transparent;
+    color: var(--color);
+    transition: 0.3s;
+}
+
+#word4 {
+    --color: rgb(255, 100, 100);
+    color: var(--color);
+
+    background-color: transparent;
+    border: solid 2px var(--color);
+}
+
+#word4:hover {
+    background-color: var(--color);
+    color: #131313;
+    transition: 0.3s;
+}
+
+#word4:not(:hover) {
+    background-color: transparent;
+    color: var(--color);
+    transition: 0.3s;
+}
+
+.softSkills-didascaliaContainer {
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 20px;   
+    bottom: 0;
+    width: 754px;
+    height: 175px;
+}
+
+.softSkills-didascalia {
+    position: absolute; 
+    width: 560px;
+    height: 175px;
+    
+}
+
