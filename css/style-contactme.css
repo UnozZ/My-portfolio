@@ -1,0 +1,25 @@
+.container-contactme {
+    position: relative;
+    display: block;
+    height: 144.4vh;
+}
+
+.bg-contactme {
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    content: url(/imgs/sfondo/sfondo-abtme.jpg);
+    z-index: 0;
+}
+
+.contactme-container {
+    position: absolute;
+    top: 17%;
+    left: 24%;
+    width: 870px;
+    height: 600px;
+
+    background-color: #131313;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 10px black;
+}

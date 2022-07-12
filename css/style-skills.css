@@ -166,7 +166,6 @@
     height: 84vh;
 
     background-color: beige;
-    border: solid 2px white;
 }
 
 .os-container {
@@ -266,10 +265,12 @@
 #img-allenamento3 {
     width: 120px;
     font-size: 70px;
+    z-index: 1;
 }
 
 #img-allenamento4 {
     width: 200px;
+    z-index: 1;
 }
 
 .softSkills-container {
@@ -422,3 +423,12 @@
     
 }
 
+.riempi-spazio {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 468px;
+
+    z-index: 0;
+    background-color: beige;
+}
