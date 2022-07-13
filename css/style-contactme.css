@@ -23,3 +23,52 @@
     border-radius: 20px;
     box-shadow: 0 0 15px 10px black;
 }
+
+.contactme-title {
+    margin-top: 25px;
+    margin-left: 40px;
+
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+#nome-cognome {
+    margin-top: 20px;
+    margin-left: 36px;
+    width: 400px;
+    height: 30px;
+
+    text-indent: 20px;
+}
+
+#email{
+    margin-top: 20px;
+    margin-left: 36px;
+    width: 400px;
+    height: 30px;
+
+    text-indent: 20px;
+}
+
+#contenuto {
+    margin-top: 20px;
+    margin-left: 36px;
+    width: 700px;
+    height: 300px;
+
+    text-indent: 20px;
+}
+
+.contactme-container button {
+    position: relative;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+
+    font-size: 1.4rem;
+
+    width: 130px;
+    height: 35px;
+}
