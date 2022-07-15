@@ -15,8 +15,8 @@
 .contactme-container {
     position: absolute;
     top: 17%;
-    left: 24%;
-    width: 870px;
+    left: 26%;
+    width: 840px;
     height: 600px;
 
     background-color: #131313;
@@ -25,8 +25,8 @@
 }
 
 .contactme-title {
-    margin-top: 25px;
-    margin-left: 40px;
+    margin-top: 30px;
+    margin-left: 60px;
 
     font-family: 'Cuprum', sans-serif;
     font-size: 2.3rem;
@@ -36,7 +36,7 @@
 
 #nome-cognome {
     margin-top: 20px;
-    margin-left: 36px;
+    margin-left: 60px;
     width: 400px;
     height: 30px;
 
@@ -45,7 +45,7 @@
 
 #email{
     margin-top: 20px;
-    margin-left: 36px;
+    margin-left: 60px;
     width: 400px;
     height: 30px;
 
@@ -54,21 +54,47 @@
 
 #contenuto {
     margin-top: 20px;
-    margin-left: 36px;
+    margin-left: 60px;
     width: 700px;
     height: 300px;
-
-    text-indent: 20px;
 }
 
 .contactme-container button {
     position: relative;
     float: right;
-    margin-right: 50px;
-    margin-top: 30px;
+    margin-right: 80px;
+    margin-top: 20px;
 
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.4rem;
+    font-weight: bold;
+    color: #E9D985;
 
+    cursor: pointer;
     width: 130px;
-    height: 35px;
+    height: 40px;
+
+    background-color: transparent;
+    border: solid 1px #E9D985;
+}
+
+.contactme-container button:hover {
+    background-color: #E9D985;
+    color: #131313;
+    transition: 0.3s;
+}
+
+.contactme-container button:not(:hover) {
+    background-color: transparent;
+    color: #E9D985;
+    transition: 0.3s;
+}
+
+.icon-contactme {
+    position: absolute;
+    right: 150px;
+    top: 40px;
+
+    width: 120px;
+    height: 120px;
 }
